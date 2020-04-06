@@ -5,7 +5,7 @@ import Navbar from "./components/layout/Navbar.js";
 import Dashboard from "./components/dashboard/Dashboard";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
-import Pricing from "./components/layout/pricing.js"
+import Pricing from "./components/layout/pricing.js";
 
 class App extends Component {
   constructor(props) {

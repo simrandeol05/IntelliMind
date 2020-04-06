@@ -1,24 +1,36 @@
 import React, { Component } from "react";
+import firebase from "../../config/fbConfig";
 
 class SignUp extends Component {
   state = {
     email: "",
     password: "",
     firstName: "",
-    lastName: ""
+    lastName: "",
+    error: null,
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     });
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault(); // stop automatic submit
-    console.log(this.state);
+    const { email, password } = this.state;
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then((user) => {
+        this.props.history.push("/");
+      })
+      .catch((error) => {
+        this.setState({ error: error });
+      });
   };
   render() {
+    const { email, password, error } = this.state;
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
