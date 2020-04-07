@@ -1,22 +1,28 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
+import "../../style.css";
+import ContactForm from "./ContactForm";
 
 class Modal extends Component {
+  constructor(props) {
+    super(props);
+  }
+  state = {};
   componentDidMount() {
     const options = {
-      onOpenStart: () => {
-        console.log("Open Start");
-      },
-      onOpenEnd: () => {
-        console.log("Open End");
-      },
-      onCloseStart: () => {
-        console.log("Close Start");
-      },
-      onCloseEnd: () => {
-        console.log("Close End");
-      },
+      //   onOpenStart: () => {
+      //     console.log("Open Start");
+      //   },
+      //   onOpenEnd: () => {
+      //     console.log("Open End");
+      //   },
+      //   onCloseStart: () => {
+      //     console.log("Close Start");
+      //   },
+      //   onCloseEnd: () => {
+      //     console.log("Close End");
+      //   },
       inDuration: 250,
       outDuration: 250,
       opacity: 0.5,
@@ -31,7 +37,7 @@ class Modal extends Component {
     return (
       <div>
         <a
-          className="waves-effect waves-light btn modal-trigger pink darken-3"
+          className="waves-effect waves-light btn modal-trigger"
           data-target="modal1"
         >
           Contact Us
@@ -45,16 +51,11 @@ class Modal extends Component {
           className="modal"
         >
           <div className="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+            <h5>Give you creds and we'll get back</h5>
+            <ContactForm />
           </div>
           <div className="modal-footer">
-            <a className="modal-close waves-effect waves-red btn-flat">
-              Disagree
-            </a>
-            <a className="modal-close waves-effect waves-green btn-flat">
-              Agree
-            </a>
+            <a className="modal-close waves-effect waves-red btn-flat">Send</a>
           </div>
         </div>
       </div>

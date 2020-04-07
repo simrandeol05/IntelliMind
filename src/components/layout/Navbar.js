@@ -15,21 +15,27 @@ const Navbar = (props) => {
           <i className="material-icons">menu</i>
         </a>
         <ul id="nav-mobile" className="left hide-on-med-and-down">
-          <li onClick={() => this.openDropDown}>
+          <li>
             <Link to="/">
-              <h5>
+              <h5 className="textClass">
                 <strong>IntelliMind</strong>
               </h5>
             </Link>
           </li>
           <li>
-            <Link to="/">Why IntelliMind</Link>
+            <Link to="/" className="textClass">
+              Why IntelliMind
+            </Link>
           </li>
           <li>
-            <Link to="/">What You Can Do</Link>
+            <Link to="/" className="textClass">
+              What You Can Do
+            </Link>
           </li>
           <li>
-            <Link to="/pricing">Pricing</Link>
+            <Link to="/pricing" className="textClass">
+              Pricing
+            </Link>
           </li>
         </ul>
         {links}

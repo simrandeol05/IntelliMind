@@ -12,7 +12,7 @@ class Email extends Component {
 
   render() {
     return (
-      <div class="fixed-action-btn">
+      <div className="fixed-action-btn">
         <Modal />
       </div>
     );

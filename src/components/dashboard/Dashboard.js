@@ -7,7 +7,7 @@ import Email from "./Email";
 class Dashboard extends Component {
   render() {
     return (
-      <div className="dashboard container center">
+      <div className="dashboard container">
         <h4 className="textClass">
           How to Setup a Viral Waiting List Launch Page Like Robinhood with
           KickoffLabs

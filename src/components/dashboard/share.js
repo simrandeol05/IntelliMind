@@ -2,28 +2,20 @@ import React from "react";
 import {
   EmailShareButton,
   FacebookShareButton,
-  InstapaperShareButton,
   FacebookShareCount,
   WhatsappShareButton,
   LinkedinShareButton,
   WhatsappIcon,
 } from "react-share";
-import {
-  EmailIcon,
-  FacebookIcon,
-  LinkedinIcon,
-  InstapaperIcon,
-} from "react-share";
+import { EmailIcon, FacebookIcon, LinkedinIcon } from "react-share";
 
 const Share = () => {
   const shareFBUrl = "https://facebook.com";
   const shareEmailUrl = "https://gmail.com";
-  const shareInstaUrl = "https://instagram.com";
   const shareWhatsappUrl = "https://whatsapp.com";
   const shareLinkedIn = "https://linkedin.com";
   const title = "Facebook";
   const emailTitle = "Gmail";
-  const instaTitle = "Instagram";
   const whatsappTitle = "Whatsapp";
   const linkedInTitle = "LinkedIn";
 
