@@ -37,7 +37,7 @@ class Modal extends Component {
     return (
       <div>
         <a
-          className="waves-effect waves-light btn modal-trigger"
+          className="waves-effect waves-light btn modal-trigger pink darken-3"
           data-target="modal1"
         >
           Contact Us
@@ -51,11 +51,8 @@ class Modal extends Component {
           className="modal"
         >
           <div className="modal-content">
-            <h5>Give you creds and we'll get back</h5>
+            <h5 className="center-align">Give you creds and we'll get back</h5>
             <ContactForm />
-          </div>
-          <div className="modal-footer">
-            <a className="modal-close waves-effect waves-red btn-flat">Send</a>
           </div>
         </div>
       </div>

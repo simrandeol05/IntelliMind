@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import firebase from "../../config/fbConfig";
-import signUpImg from "../../Images/signUpImg.png";
 
 class SignUp extends Component {
   state = {
