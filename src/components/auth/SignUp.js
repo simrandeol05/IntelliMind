@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import firebase from "../../config/fbConfig";
+import signUpImg from "../../Images/signUpImg.png";
 
 class SignUp extends Component {
   state = {
@@ -36,28 +37,68 @@ class SignUp extends Component {
         <form onSubmit={this.handleSubmit} className="white">
           <h5 className="grey-text text-darken-3"> Sign Up </h5>
 
-          <div className="input-field">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" onChange={this.handleChange} />
-          </div>
+          <div className="row">
+            <div className="col l6 s6 m6">
+              <div className="col l12 s12 m12">
+                <div className="input-field">
+                  <label htmlFor="email">Email</label>
+                  <input type="email" id="email" onChange={this.handleChange} />
+                </div>
+              </div>
+              <div className="col l12 s12 m12">
+                <div className="input-field">
+                  <label htmlFor="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    onChange={this.handleChange}
+                  />
+                </div>
+              </div>
 
-          <div className="input-field">
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" onChange={this.handleChange} />
-          </div>
+              <div className="col l12 s12 m12">
+                <div className="input-field">
+                  <label htmlFor="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    onChange={this.handleChange}
+                  />
+                </div>
+              </div>
 
-          <div className="input-field">
-            <label htmlFor="firstName">First Name</label>
-            <input type="text" id="firstName" onChange={this.handleChange} />
-          </div>
-
-          <div className="input-field">
-            <label htmlFor="lastName">Last Name</label>
-            <input type="text" id="lastName" onChange={this.handleChange} />
-          </div>
-
-          <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Login</button>
+              <div className="col l12 s12 m12">
+                <div className="input-field">
+                  <label htmlFor="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    onChange={this.handleChange}
+                  />
+                </div>
+              </div>
+              <div className="col l12 s12 m12">
+                <div className="input-field">
+                  <button className="btn pink lighten-1 z-depth-0">
+                    Login
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col l6 s6 m6">
+              <section className="signupImg">
+                <div className=" notification center">
+                  <h4 className="center">
+                    Driving over 100k in sales with a Shopify Rewards campaign
+                    from KickoffLabs
+                  </h4>
+                  <p className="fontpt">
+                    We just launched our new integration to boost sales on
+                    Shopify!
+                  </p>
+                </div>
+              </section>
+            </div>
           </div>
         </form>
       </div>

@@ -9,7 +9,7 @@ const Navbar = (props) => {
 
   const links = auth.uid ? <SignedInLinks /> : <SignedOutLinks />;
   return (
-    <nav className="nav-wrapper NavClass">
+    <nav className="navbar-fixed NavClass">
       <div className="container">
         <a href="#" data-target="mobile-demo" className="sidenav-trigger">
           <i className="material-icons">menu</i>

@@ -39,6 +39,50 @@ main {
   width: 1200px;
 }
 
+.signupImg {
+  position: fixed;
+  top: 0;
+  left: 55%;
+  width: 45%;
+  height: 100%;
+  background: rgb(175, 174, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(175, 174, 238, 1) 0%,
+    rgba(233, 148, 232, 1) 100%
+  );
+  padding: 12rem 30px;
+  color: #ffffff;
+}
+
+.signInImg {
+  position: fixed;
+  top: 0;
+  left: 55%;
+  width: 45%;
+  height: 100%;
+  background: rgb(175, 174, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(175, 174, 238, 1) 0%,
+    rgba(148, 233, 208, 1) 100%
+  );
+  padding: 12rem 30px;
+  color: #ffffff;
+}
+
+.notification {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 75%;
+  margin: 10px auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 2px;
+  transition: 0.3s ease all;
+  position: relative;
+  color: #ffffff;
+}
+
 .remove-padding {
   padding: 0;
   margin: 0;
@@ -68,6 +112,10 @@ main {
   font-size: 10px !important;
 }
 
+.fontpt {
+  font-size: 10pt !important;
+}
+
 .page-footer {
   background: transparent !important;
 }
@@ -84,7 +132,7 @@ main {
 
 .NavClass {
   margin-bottom: 60px;
-  background: transparent !important;
+  background-color: white !important;
 }
 
 form {
