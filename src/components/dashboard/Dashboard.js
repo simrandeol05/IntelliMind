@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import SampleData from "../layout/sampleData";
 import Share from "./share";
+import Email from "./Email";
 
 class Dashboard extends Component {
   render() {
@@ -44,6 +45,10 @@ class Dashboard extends Component {
               <SampleData />
             </div>
           </div>
+        </div>
+
+        <div className="row customEmail">
+          <Email />
         </div>
 
         <footer class="page-footer footerClass">

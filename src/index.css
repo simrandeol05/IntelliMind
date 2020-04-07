@@ -52,6 +52,21 @@ main {
   text-transform: uppercase;
 }
 
+.customEmail {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin-right: 20px !important;
+}
+
+.fontsize10 {
+  font-size: 10px !important;
+}
+
+.page-footer {
+  background: transparent !important;
+}
+
 .full-width {
   left: 50%;
   margin-left: -50vw;
