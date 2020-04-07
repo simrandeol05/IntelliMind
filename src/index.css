@@ -111,7 +111,11 @@ main {
 .fontsize10 {
   font-size: 10px !important;
 }
-
+.closeBtnPos {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .fontpt {
   font-size: 10pt !important;
 }

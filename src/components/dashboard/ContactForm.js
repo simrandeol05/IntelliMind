@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
+import { Redirect } from "react-router-dom";
 
 class ContactForm extends Component {
   constructor(props) {
@@ -89,7 +90,7 @@ class ContactForm extends Component {
                   id="email"
                   type="text"
                   className="validate"
-                  onChange={this.handleChangeEmail}
+                  onChange={(e) => this.handleChangeEmail(e)}
                   value={this.state.email}
                   name="email"
                 />
@@ -100,13 +101,13 @@ class ContactForm extends Component {
                   id="message"
                   type="text"
                   className="validate"
-                  onChange={this.handleChangeMessage}
+                  onChange={(e) => this.handleChangeMessage(e)}
                   value={this.state.message}
                   name="message"
                 />
                 <label htmlFor="Message">Message</label>
               </div>
-              <div className="input-field col s12 right">
+              <div className="input-field col s3 right">
                 <button
                   className="btn waves-effect waves-light pink darken-3"
                   type="submit"
