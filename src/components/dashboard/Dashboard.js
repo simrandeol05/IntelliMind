@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import SampleData from "../layout/sampleData";
+import Share from "./share";
 
 class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard container center">
-        <h3 className="textClass purple-text text-darken-4">
+        <h4 className="textClass">
           How to Setup a Viral Waiting List Launch Page Like Robinhood with
           KickoffLabs
-        </h3>
+        </h4>
 
         <section className="headingSection full-width"></section>
 
@@ -44,6 +45,14 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
+
+        <footer class="page-footer footerClass">
+          <div class="row">
+            <p class="grey-text text-lighten-4">
+              <Share />
+            </p>
+          </div>
+        </footer>
       </div>
     );
   }
