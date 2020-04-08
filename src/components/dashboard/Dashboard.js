@@ -10,7 +10,7 @@ class Dashboard extends Component {
       <div className="dashboard container">
         <h4 className="textClass">
           How to Setup a Viral Waiting List Launch Page Like Robinhood with
-          KickoffLabs
+          IntelliMind
         </h4>
 
         <section className="headingSection full-width"></section>

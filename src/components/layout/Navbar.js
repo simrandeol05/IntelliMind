@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SignedInLinks from "./SignedLink";
 import SignedOutLinks from "./SignedOut";
 import { connect } from "react-redux";
+import DropDown from "./Dropdown";
 
 const Navbar = (props) => {
   const { auth } = props;
@@ -28,9 +29,7 @@ const Navbar = (props) => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="textClass">
-              What You Can Do
-            </Link>
+            <DropDown />
           </li>
           <li>
             <Link to="/pricing" className="textClass">

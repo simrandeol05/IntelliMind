@@ -138,6 +138,25 @@ main {
   margin: auto !important;
 }
 
+.dropdownMenu {
+  padding: 0;
+  background-color: white;
+  color: #394046 !important;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  border: none;
+  width: 200px !important;
+  height: 290px !important;
+  -webkit-box-shadow: none important;
+  -moz-box-shadow: none important;
+  box-shadow: none !important;
+}
+.boxShadow {
+  -webkit-box-shadow: none important;
+  -moz-box-shadow: none important;
+  box-shadow: none !important;
+}
+
 .full-width {
   left: 50%;
   margin-left: -50vw;
