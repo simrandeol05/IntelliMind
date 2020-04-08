@@ -4,15 +4,15 @@ import SampleData from "./sampleData";
 const Pricing = () => {
   return (
     <div className="container">
-      <h1 className="center textClass">
+      <h4 className="center textClass">
         Start growing your business with a viral boost today!
-      </h1>
+      </h4>
       <div className="section">
         <div className="row">
           <div className="col s4 m4">
-            <h4 className="header center pink-text text-darken-3 textClass">
+            <h5 className="header center pink-text text-darken-3 textClass">
               Pay Monthly
-            </h4>
+            </h5>
             <div className="card horizontal">
               <div className="card-stacked">
                 <div className="card-content">
@@ -26,9 +26,9 @@ const Pricing = () => {
           </div>
 
           <div className="col s4 m4">
-            <h4 className="header center pink-text text-darken-3 textClass">
+            <h5 className="header center pink-text text-darken-3 textClass">
               Pay Quaterly
-            </h4>
+            </h5>
             <div className="card horizontal">
               <div className="card-stacked">
                 <div className="card-content">
@@ -42,9 +42,9 @@ const Pricing = () => {
           </div>
 
           <div className="col s4 m4">
-            <h4 className="header center pink-text text-darken-3 textClass">
+            <h5 className="header center pink-text text-darken-3 textClass">
               Pay Yearly
-            </h4>
+            </h5>
             <div className="card horizontal">
               <div className="card-stacked">
                 <div className="card-content">
@@ -61,9 +61,9 @@ const Pricing = () => {
         <div className="row">
           <div className="col s12 m12">
             <div className="icon-block">
-              <h2 className="center pink-text text-darken-3 textClass">
+              <h4 className="center pink-text text-darken-3 textClass">
                 Pay Yearly
-              </h2>
+              </h4>
               <h5 className="center">Pay Yearly</h5>
               <SampleData />
             </div>
@@ -71,9 +71,9 @@ const Pricing = () => {
 
           <div className="col s12 m12">
             <div className="icon-block">
-              <h2 className="center pink-text text-darken-3 textClass">
+              <h4 className="center pink-text text-darken-3 textClass">
                 Semi Annual
-              </h2>
+              </h4>
               <h5 className="center">Semi Annual</h5>
               <SampleData />
             </div>
@@ -81,9 +81,9 @@ const Pricing = () => {
 
           <div className="col s12 m12">
             <div className="icon-block">
-              <h2 className="center pink-text text-darken-3 textClass">
+              <h4 className="center pink-text text-darken-3 textClass">
                 Monthly
-              </h2>
+              </h4>
               <h5 className="center">Monthly</h5>
               <SampleData />
             </div>

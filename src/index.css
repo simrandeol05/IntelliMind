@@ -124,6 +124,20 @@ main {
   background: transparent !important;
 }
 
+.flexbox {
+  display: flex;
+  flew-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.shareContainer {
+  width: 88% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  margin: auto !important;
+}
+
 .full-width {
   left: 50%;
   margin-left: -50vw;
